@@ -1659,3 +1659,57 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+/* Container for nav links */
+#header nav ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+  }
+  
+  /* Force each item to be same width and center contents */
+  #header nav ul li {
+	width: 120px;           /* Set fixed width to equalize appearance */
+	height: 60px;           /* Optional: controls vertical space */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  /* Images inside nav */
+  #header nav ul li img.nav-icon {
+	max-height: 40px;
+	width: auto;
+	display: block;
+  }
+  .image.main {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically (if needed) */
+    overflow: hidden;        /* Hides overflow for clean edges */
+}
+
+.image.main img {
+    max-width: 100%;         /* Responsive scaling */
+    height: auto;            /* Maintain image aspect ratio */
+    width: auto;             /* Allows smaller images not to stretch unnecessarily */
+    display: block;
+    margin: 0 auto;          /* Adds extra safeguard for centering */
+}
+/* Final correction for nav-icon images */
+#header nav ul li img.nav-icon {
+    max-height: 40px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ONLY correct Google Play button visually */
+#header nav ul li img.nav-icon.googleplay {
+    transform: translateX(-20px); /* Adjust this number until perfectly centered */
+}
+
+/* OPTIONAL: Correct App Store slightly if needed */
+#header nav ul li img.nav-icon.appstore {
+    transform: translateX(-15px); /* If necessary—smaller adjustment */
+}
