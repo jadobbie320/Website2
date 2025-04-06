@@ -1706,7 +1706,7 @@ input, select, textarea {
 
 /* ONLY correct Google Play button visually */
 #header nav ul li img.nav-icon.googleplay {
-    transform: translateX(-20px); /* Adjust this number until perfectly centered */
+    transform: translateX(-22px); /* Adjust this number until perfectly centered */
 }
 
 /* OPTIONAL: Correct App Store slightly if needed */
